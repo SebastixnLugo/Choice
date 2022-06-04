@@ -1,16 +1,31 @@
-let mail = prompt("Ingrese su email:");
-if (mail == "sebxstianlugo@gmail.com") {
-    console.log("¡Bienvenido Sebastián! Ahora ingresa tu contraseña");
-} else {
-    console.warn("Su mail no está en nuestra base de datos");
-    alert("Su mail no está en nuestra base de datos");
-}
+debugger
 
-let password = prompt("Ingrese su contraseña:");
-if (password == "12345678") {
-    console.log("Su contraseña es correcta");
-    alert("¡Bienvenido Sebastián!");
-} else {
-    console.warn("Su contraseña es incorrecta");
-    alert("Su contraseña es incorrecta. Ingrese nuevamente los datos");
+let usuario = "Sebastian";
+
+cont = 0;
+while (cont < 3) {
+    let usuario = prompt("Introduzca su usuario");
+    let contrasena = prompt("Introduzca su contraseña");
+
+    if (usuario == 'Sebastian' && contrasena == "CoderHouse") {
+        alert("Bienvenido a Terapy");
+        cont = 0;
+        break;
+
+    } else {
+
+        if (usuario != 'Sebastian' && contrasena == 'CoderHouse') {
+            alert('usuario incorrecto');
+        } else if (usuario == 'Sebastian' && contrasena != 'CoderHouse') {
+            alert('contraseña incorrecta');
+        } else {
+            cont++;
+            alert('Error. Los datos son incorrectos');
+        }
+
+        if (cont == 3) {
+            alert('Lo siento, has agotado el número de intentos');
+        }
+    }
+
 }
