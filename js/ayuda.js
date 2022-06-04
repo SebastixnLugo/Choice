@@ -1,0 +1,1 @@
+alert("Gracias por confiar en Terapy y por tener la valentía de pedir ayuda")

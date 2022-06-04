@@ -1,0 +1,43 @@
+
+
+a:link, a:visited, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main-index {
+    margin: 0 22.5rem 0 22.5rem;
+
+    .card-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.5rem;
+    }
+
+    .card {
+        /* Add shadows to create the "card" effect */
+        transition: 0.3s;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        background-color: $color-base;
+        color: #fff;
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+
+    .banner-search {
+        padding-top: 3rem;
+    }
+}

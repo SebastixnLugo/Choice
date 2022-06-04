@@ -1,0 +1,10 @@
+$color-base: #65AA8D;
+$color: #e24040;
+
+
+//POSICIONAMIENTO
+%flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
