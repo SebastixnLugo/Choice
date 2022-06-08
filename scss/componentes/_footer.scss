@@ -1,0 +1,62 @@
+footer {
+    background-color: $color-base;
+    display: flex;
+    justify-content: space-around;
+    @extend %poppins;
+    padding: 3em 0 3em 0;
+
+
+    h4 {
+        color: #fff;
+    }
+
+
+    i {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .redes-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    a {
+        color: #fff;
+        @extend %poppins;
+        font-size: 1.1em;
+    }
+    
+    .logo-footer {
+        width: 40%;
+        position: relative;
+    }
+
+    .h4-logo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.debajo-footer {
+    background-color: $color-base;
+    @extend %flexbox-center;
+    @extend %poppins;
+    flex-direction: column;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.f-r {
+    display: flex;
+    flex-direction: column;
+
+    a a:hover a:link{
+        color: #fff;
+        @extend %poppins;
+    }
+}

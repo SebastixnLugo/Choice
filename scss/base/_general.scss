@@ -20,7 +20,22 @@ body {
 a {
     text-decoration: none;
   }
+
+  a:link, a:visited, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
    
 ul {
     list-style-type: none;
+  }
+
+  .a-main {
+    color: #fff;
+    text-decoration: none;
   }

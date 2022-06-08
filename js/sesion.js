@@ -8,7 +8,7 @@ while (cont < 3) {
     let contrasena = prompt("Introduzca su contraseña");
 
     if (usuario == 'Sebastian' && contrasena == "CoderHouse") {
-        alert("Bienvenido a Terapy");
+        alert("Bienvenido a Choice");
         cont = 0;
         break;
 

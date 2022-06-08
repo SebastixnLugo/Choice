@@ -1,10 +1,10 @@
-
-
-a:link, a:visited, a:active
-{
+a:link,
+a:visited,
+a:active {
     color: #000000;
     text-decoration: none;
 }
+
 a:hover {
     color: #fff;
     text-decoration: none;
@@ -39,5 +39,62 @@ a:hover {
 
     .banner-search {
         padding-top: 3rem;
+        margin-bottom: 3rem;
     }
+}
+
+.opciones-index {
+    background-color: $color-base;
+    width: 100%;
+    padding: 2em 0 2em 0;
+    margin-top: 4rem;
+
+    .h2-index {
+        color: #fff;
+        @extend %flexbox-center;
+    }
+
+    .clubs-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        img {
+            width: 5%;
+
+        }
+
+        h3 {
+            color: #fff;
+        }
+    }
+}
+
+
+.info {
+    margin: 0 22.5rem 0 22.5rem;
+    @extend %flexbox-center;
+    flex-direction: column;
+
+    img {
+        width: 40%;
+    }
+
+    h2 {
+        padding-top: 2em;
+    }
+
+    p {
+        padding-bottom: 2em;
+        font-size: 1.5em;
+        text-align: justify
+    }
+
+}
+
+.hr-main {
+    height: 2px;
+    margin: 0 22.5rem 0 22.5rem;
+    background-color: $color-base;
 }
