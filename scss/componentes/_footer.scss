@@ -21,20 +21,25 @@ footer {
         justify-content: center;
         gap: 20px;
     }
-    
-    a {
+
+    a a:hover a:link a:visited {
         color: #fff;
+        background-color: #fff;
         @extend %poppins;
         font-size: 1.1em;
     }
-    
+
     .logo-footer {
-        width: 40%;
-        position: relative;
+        width: 25%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 1rem 1rem 20rem;
     }
 
     .h4-logo {
-        position: absolute;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,8 +60,13 @@ footer {
     display: flex;
     flex-direction: column;
 
-    a a:hover a:link{
+    a a:hover a:link {
         color: #fff;
         @extend %poppins;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
     }
 }

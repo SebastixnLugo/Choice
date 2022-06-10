@@ -9,6 +9,13 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+.main-index .card-nav .card a {
+    color: #000000;
+}
+
+.main-index .card-nav .card a:hover {
+    color: #fff;
+}
 
 
 .main-index {
@@ -58,16 +65,24 @@ a:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-left: 4em;
 
 
-        img {
-            width: 5%;
+        .clubs-position {
+            img {
+                width: 40%;
+                margin: 0 0 0 5rem;
+                padding-bottom: 0.7em;
+            }
+            p {
+                color: #fff;
+                @extend %poppins;
+                font-size: 1.2em;
+                text-align: center;
 
+            }
         }
-
-        h3 {
-            color: #fff;
-        }
+        
     }
 }
 

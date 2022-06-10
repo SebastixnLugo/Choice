@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins|Lato|Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-.f-r a a:hover a:link, .debajo-footer, footer a, footer {
+.f-r a a:hover a:link, .debajo-footer, footer a a:hover a:link a:visited, footer, .opciones-index .clubs-container .clubs-position p {
   font-family: "Poppins", sans-serif;
 }
 
@@ -325,6 +325,14 @@ a:hover {
   text-decoration: none;
 }
 
+.main-index .card-nav .card a {
+  color: #000000;
+}
+
+.main-index .card-nav .card a:hover {
+  color: #fff;
+}
+
 .main-index {
   margin: 0 22.5rem 0 22.5rem;
   /* On mouse-over, add a deeper shadow */
@@ -365,12 +373,17 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 4em;
 }
-.opciones-index .clubs-container img {
-  width: 5%;
+.opciones-index .clubs-container .clubs-position img {
+  width: 40%;
+  margin: 0 0 0 5rem;
+  padding-bottom: 0.7em;
 }
-.opciones-index .clubs-container h3 {
+.opciones-index .clubs-container .clubs-position p {
   color: #fff;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .info {
@@ -1180,16 +1193,20 @@ footer .redes-container {
   justify-content: center;
   gap: 20px;
 }
-footer a {
+footer a a:hover a:link a:visited {
   color: #fff;
+  background-color: #fff;
   font-size: 1.1em;
 }
 footer .logo-footer {
-  width: 40%;
-  position: relative;
+  width: 25%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 1rem 1rem 20rem;
 }
 footer .h4-logo {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1209,8 +1226,12 @@ footer .h4-logo {
 .f-r a a:hover a:link {
   color: #fff;
 }
+.f-r ul li a {
+  text-decoration: none;
+  color: #fff;
+}
 
-footer, footer a, .debajo-footer, .f-r a a:hover a:link {
+.opciones-index .clubs-container .clubs-position p, footer, footer a a:hover a:link a:visited, .debajo-footer, .f-r a a:hover a:link {
   font-family: "Poppins", sans-serif;
 }
 
