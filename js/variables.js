@@ -22,7 +22,7 @@ const argentina = listaAlumnos.filter((e)=>{
 console.log(argentina)
 
 const matricula = listaAlumnos.find((e)=>{
-    return e.nroAlumno == 6
+    return e.cupoAlumno == 6
 })
 
 console.log(matricula)
