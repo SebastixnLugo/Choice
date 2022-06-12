@@ -21,6 +21,15 @@ const argentina = listaAlumnos.filter((e)=>{
 
 console.log(argentina)
 
+const matricula = listaAlumnos.find((e)=>{
+    return e.nroAlumno == 6
+})
+
+console.log(matricula)
+
+
+
+
 
 // const cincoCaracteres = nombre.find((e)=>e.length=5);
 // const cincoLetras = nombre.findIndex((e)=>e.length=5);
