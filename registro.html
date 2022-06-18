@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choice</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/search.js"></script>
-    <script src="js/registro.js"></script>
-    <script src="js/variables.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -24,64 +21,7 @@
 <body>
     <!--------------------- HEADER --------------------->
     <header>
-        <section class="header-container">
-            <div class="logo-container gap-3">
-                <a href="index.html">
-                    <img class="logo-header"
-                        src="https://cdn.discordapp.com/attachments/883409626949906452/983995760825737256/unknown.png"
-                        alt="logo-terapyapp">
-                </a>
-                <h1 class="h1-terapyapp">Choice</h1>
-            </div>
-
-            <div class="help-button d-flex gap-4">
-                <a href="sesion.html"><img class="logo-user" src="img/user-icon.png" alt="user"></a>
-                <a href="ayuda.html">
-                    <div class="submit-feedback">Ayuda</div>
-                </a>
-            </div>
-        </section>
     </header>
-
-    <!---------------------- MAIN --------------------->
-    <main class="main-index">
-        <section class="card-nav">
-            <div class="card">
-                <div class="container">
-                    <a href="#">
-                        <h4><b>Futura sección</b></h4>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="container">
-                    <a href="#">
-                        <h4><b>Futura sección</b></h4>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="container">
-                    <a href="#">
-                        <h4><b>Futura sección</b></h4>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="container">
-                    <a href="#">
-                        <h4><b>Futura sección</b></h4>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="container">
-                    <a href="#">
-                        <h4><b>Futura sección</b></h4>
-                    </a>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -93,12 +33,12 @@
                 </div>
                 <div class="row clearfix">
                     <div class="">
-                        <form>
+                        <form id="formulario">
                             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                                <input type="email" name="email" placeholder="Email" required />
+                                <input id="email-registro" type="email" name="email" placeholder="Email" required />
                             </div>
                             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                                <input type="password" name="password" placeholder="Contraseña" required />
+                                <input id="password-registro" type="password" name="password" placeholder="Contraseña" required />
                             </div>
                             <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
                                 <input type="password" name="password" placeholder="Repetí tu contraseña" required />
@@ -106,18 +46,18 @@
                             <div class="row clearfix">
                                 <div class="col_half">
                                     <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                        <input type="text" name="name" placeholder="Nombre" />
+                                        <input id="nombre-registro" type="text" name="name" placeholder="Nombre" />
                                     </div>
                                 </div>
                                 <div class="col_half">
                                     <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                        <input type="text" name="name" placeholder="Apellido" required />
+                                        <input id="apellido-registro" type="text" name="name" placeholder="Apellido" required />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="input_field select_option">
-                                <select>
+                                <select id="genero-registro" type="text">
                                     <option>Identidad de género</option>
                                     <option>Hombre</option>
                                     <option>Mujer</option>
@@ -127,20 +67,31 @@
                             </div>
 
                             <div class="input_field select_option">
-                                <select>
-                                    <option>Selecciona tu país</option>
-                                    <option>Argentina</option>
-                                    <option>Chile</option>
-                                    <option>Colombia</option>
-                                    <option>Costa Rica</option>
-                                    <option>Cuba</option>
-                                    <option>Ecuador</option>
-                                    <option>España</option>
-                                    <option>Paraguay</option>
-                                    <option>Perú</option>
-                                    <option>Uruguay</option>
-                                    <option>México</option>
-                                    <option>Venezuela</option>
+                                <select name="pais" id="pais-regitro">
+                                    <option value="Elegir" id="AF">Elegí tu país</option>
+                                    <option value="Elegir" id="AF">Elegir opción</option>
+                                    <option value="Argentina" id="AR">Argentina</option>
+                                    <option value="Bolivia" id="BO">Bolivia</option>
+                                    <option value="Brasil" id="BR">Brasil</option>
+                                    <option value="Chile" id="CL">Chile</option>
+                                    <option value="Colombia" id="CO">Colombia</option>
+                                    <option value="Costa Rica" id="CR">Costa Rica</option>
+                                    <option value="Cuba" id="CU">Cuba</option>
+                                    <option value="Ecuador" id="EC">Ecuador</option>
+                                    <option value="El Salvador" id="SV">El Salvador</option>
+                                    <option value="España" id="ES">España</option>
+                                    <option value="Guatemala" id="GT">Guatemala</option>
+                                    <option value="Honduras" id="HN">Honduras</option>
+                                    <option value="Islas Malvinas" id="IM">Islas Malvinas</option>
+                                    <option value="México" id="MX">México</option>
+                                    <option value="Nicaragua" id="NI">Nicaragua</option>
+                                    <option value="Panamá" id="PA">Panamá</option>
+                                    <option value="Paraguay" id="PY">Paraguay</option>
+                                    <option value="Perú" id="PE">Perú</option>
+                                    <option value="Puerto Rico" id="PR">Puerto Rico</option>
+                                    <option value="República Dominicana" id="DO">República Dominicana</option>
+                                    <option value="Uruguay" id="UY">Uruguay</option>
+                                    <option value="Venezuela" id="VE">Venezuela</option>
                                 </select>
                             </div>
                             <div class="row">
@@ -174,6 +125,10 @@
             </div>
         </div>
     </main>
+
+
+    <script src="js/registro.js"></script>
+    <script src="js/variables.js"></script>
 
 
 
