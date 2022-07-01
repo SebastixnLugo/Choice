@@ -1,0 +1,45 @@
+@import "../base/variables";
+
+.body-cuest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #800040;
+}
+
+#encabezado {
+    background: #fff;
+    min-height: 200px;
+    @extend %poppins;
+    @extend %flexbox-center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 45vw;
+    margin: 10px;
+    padding: 10px;
+
+    img {
+        max-height: 600px;
+        max-width: 600px;
+    }
+}
+
+#pregunta {
+    font-size: 1.8em;
+}
+
+.values {
+    color: #000;
+    background: #fff;
+    @extend %poppins;
+    width: 45vw;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    .values:hover {
+        background-color: #ccc;
+        color: #800040;
+    }

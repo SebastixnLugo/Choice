@@ -1,0 +1,46 @@
+
+main {
+    display: flex;
+
+    .dev-l {
+        background-color: $dev-club;
+        height: 62.5rem;
+        width: 35.6rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+        }
+
+        .emblema {
+            width: 60%;
+        }
+
+        ul li a {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
+        }
+    }
+
+    .dev-r {
+        background-color: rgb(115, 115, 115);
+        background-size: cover;
+        height: 62.5rem;
+        width: 84.3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3em;
+        }
+    }
+}
+

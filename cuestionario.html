@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba | HTML</title>
+    <script defer src="js/cuestionario.js"></script>
+    <script defer src="js/variablesCuestionario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-cuest">
+
+    <div id="cuestionario">
+        <div id="encabezado">
+            <p id="pregunta">¡Acá va la pregunta! Mucha suerte :)</p>
+            <br>
+            <img src="img/Justify-content-1 (2).png" alt="">
+        </div>
+
+        <div class="values" id="value-1" onclick="elegirOpcion(0)">
+            <p>Opcion 1</p>
+        </div>
+
+        <div class="values" id="value-2" onclick="elegirOpcion(1)">
+            <p>Opcion 2</p>
+        </div>
+
+        <div class="values" id="value-3" onclick="elegirOpcion(2)">
+            <p>Opcion 3</p>
+        </div>
+
+        <div class="values" id="value-4" onclick="elegirOpcion(3)">
+            <p>Opcion 4</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
